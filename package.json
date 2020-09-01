@@ -7,7 +7,7 @@
   "author": "@damorenon",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec babel-node lib/server.js",
+    "dev": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
@@ -39,6 +39,7 @@
     "eslint": "^7.7.0",
     "eslint-plugin-react": "^7.20.6",
     "jest": "^26.4.2",
+    "react-test-renderer": "^16.13.1",
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
